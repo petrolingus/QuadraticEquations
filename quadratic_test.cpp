@@ -11,6 +11,8 @@ TEST(QuadraticEquationTest, DiscriminantIsZero) {
 // Check for different roots if the discriminant is greater than zero
 TEST(QuadraticEquationTest, DiscriminantGreaterZero) {
     const std::pair<double, double> &pair = quadratic::calculate(1, 5, 1);
+    EXPECT_EQ(pair.first, -0.20871215252208009);
+    EXPECT_EQ(pair.second, -4.7912878474779195);
     EXPECT_NE(pair.first, pair.second);
 }
 
